@@ -1,0 +1,19 @@
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+}
+.container{
+    padding:10px;
+    max-width: 400px;
+}
+
+.info{
+    margin-top: 50px;
+}
+
+.add{
+    margin-top: 50px;
+}
