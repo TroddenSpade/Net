@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="/js/back.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+
+    <div class="body">
+        <div class="container">
+            <h2>Enter Friend's Information</h2>
+            <div class="info">
+                <div class="row g-3 align-items-center">
+                    <div class="col-auto">
+                    <label for="inputName" class="col-form-label">Phone Number</label>
+                    </div>
+                    <div class="col-auto">
+                    <input type="phone" maxlength="11" id="number_input" placeholder="" class="form-control">
+                    </div>
+                    <div class="col-auto">
+                    <span id="nameHelper" class="form-text">
+                        You can add a new contact using their phone number.
+                    </span>
+                    </div>
+                </div>
+                <div class="add">
+                    <button type="button" class="btn btn-primary" onclick="add()">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="/contacts/add/index.js"></script>
+</html>
