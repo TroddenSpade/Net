@@ -1,0 +1,149 @@
+.body{
+    width: 100%;
+    height: 90vh;
+}
+
+.head-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.info{
+    margin-left: 15px;
+}
+
+.image img{
+    width: 7vh;
+    height: 7vh;
+    border-radius: 50%;
+}
+
+.info h5, h6{
+    margin: 0;
+}
+
+.info h6 {
+    color: grey;
+}
+
+.bottom{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.messages {
+    height: 82vh;
+    overflow: scroll;
+    width: 100%;
+    background-color: #cbf2ff;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+}
+
+.input{
+    width: 100vw;
+    height: 8vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.btn{
+    background-color: #0099ff;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+.message-lane{
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    /* background-color: royalblue; */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 6px 0 6px 0;
+}
+
+.fix {
+    flex: 1 1 auto;
+}
+
+.middle{
+    justify-content: center;
+}
+
+.left{
+    justify-content: flex-start;
+}
+
+.right{
+    justify-content: flex-end;
+}
+
+.message-box{
+    max-width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+    word-wrap: break-word; 
+    align-items: start;
+}
+
+.icon{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.date{
+    font-size: 0.8em;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 650px) {
+    .message-box{
+        max-width: 80vw;
+    }
+}
+
+.blue{
+    background-color: #0099ff;
+}
+
+.white{
+    background-color: white;
+}
+
+.gery{
+    background-color: lightgrey;
+}
+
+.message-box p {
+    margin: 0;
+}
+
+.image-box{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.image-box img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
