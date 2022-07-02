@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="/js/navbar.js"></script>
+
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <div class="container">
+        <form class="form" id="signup">
+            <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="name" class="form-control" id="name">
+                <div class="form-text">It will be your Account Name.</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Username</label>
+                <input type="username" class="form-control" id="username_1">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Phone Number</label>
+                <input type="phone-number" class="form-control" id="number">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password_1">
+            </div>
+            <button type="button" onclick="signup()" class="btn btn-primary">Submit</button>
+            <div class="bottom">
+                <br>
+                <div class="form-text">Do you have an acount?</div>
+                <br>
+                <button type="button" onclick="change()" class="btn btn-primary">Log In</button>
+            </div>
+        </form>
+        <form class="form" id="signin">
+            <div class="mb-3">
+                <label class="form-label">Username</label>
+                <input type="username" class="form-control" id="username">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password">
+            </div>
+            <button type="button" onclick="signin()" class="btn btn-primary">Submit</button>
+            <div class="bottom">
+                <br>
+                <div class="form-text">Don't you have an acount?</div>
+                <br>
+                <button type="button" onclick="change()" class="btn btn-primary">Sign Up</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="/login/index.js"></script>
+</html>
